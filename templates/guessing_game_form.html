@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+<style>
+        .game_form, p {
+            color: rgb(0, 72, 255);
+            text-align: center;
+        }
+    </style>
+<form class="game_form">
+
+    <label for="options">choose option</label>
+    <select id='options' name="options">
+        <option value="Too big">Too big</option>
+        <option value="Too small">Too small</option>
+        <option value="You won">You won</option>
+
+
+    </select>
+
+</form>
+
+<p> {{guess}} </p>
+
+</body>
+</html>
