@@ -6,29 +6,37 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        .game_form, p, h1 {
+            font-size: 25px;
+            color: rgb(0, 72, 255);
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
 </head>
 
 <body>
-<style>
-        .game_form, p {
-            color: rgb(0, 72, 255);
-            text-align: center;
-        }
-    </style>
-<form class="game_form">
 
-    <label for="options">choose option</label>
-    <select id='options' name="options">
-        <option value="Too big">Too big</option>
-        <option value="Too small">Too small</option>
-        <option value="You won">You won</option>
+<form method='post' class="game_form" action="">
 
 
-    </select>
+    <input type="submit" name="user_answer" value="too small">
 
+    <input type="submit" name="user_answer" value="too big">
+
+    <input type="submit" name="user_answer" value="you won">
+
+    <input type="hidden" name="min" value="{{min}}">
+
+    <input type="hidden" name="max" value="{{max}}">
+
+    <input type="hidden" name="guess" value="{{guess}}">
 </form>
 
 <p> {{guess}} </p>
+
+<h1> {{message}}</h1>
 
 </body>
 </html>
